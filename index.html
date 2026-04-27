@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Documentation</title>
+  <link rel="stylesheet" href="/src/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="app-container">
+    <div class="main-layout">
+      <nav class="sidebar-left">
+        <ul class="nav-menu">
+          <li class="has-children">
+            <span class="nav-group-title">Introduction</span>
+            <ul class="sub-menu">
+              <li><button class="nav-btn active" data-target="about-me">About me</button></li>
+              <li><button class="nav-btn" data-target="skill">Skill</button></li>
+            </ul>
+          </li>
+          <li class="has-children">
+            <span class="nav-group-title">Project</span>
+            <ul class="sub-menu">
+              <li><button class="nav-btn" data-target="project-1">Heaven In Your Heart</button></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="content">
+        <article id="content-container">
+          <section id="about-me" class="content-section active">
+            <h2>About me</h2>
+            <div class="content-block">
+              <p>Hello! My name is Nguyen Ngoc Nguyen, a 22-year-old senior pursuing a Bachelor’s degree in Physics and
+                Engineering Physics at the University of Science, Vietnam National University - Ho Chi Minh City.</p>
+
+              <div class="image-gallery">
+                <img src="/images/Trường_Đại_học_Khoa_học_Tự_nhiên,_Đại_học_Quốc_gia_Thành_phố_Hồ_Chí_Minh.svg.png"
+                  alt="VNU-HCM University of Science" class="responsive-img" width="400" height="auto">
+                <img src="/images/VNU-HCM_logo.png" alt="VNU-HCM Logo" class="responsive-img" width="500" height="auto">
+              </div>
+
+              <p>You might be wondering why a Physics student is applying for a game coding position. I have been asked
+                this question many times. Actually, although I am a Physics major, I am specializing in Computational
+                Physics, so I have some knowledge of Information Technology. I didn't study IT as much as formal IT
+                majors, but I have tried to improve myself by researching materials on forums to gain more knowledge and
+                develop my coding mindset.</p>
+            </div>
+
+            <div class="content-block">
+              <h3>Why Game Development?</h3>
+              <p>The answer is simple: I have a passion for games, especially RPGs. I know the games mentioned in your
+                JD, but unfortunately, I didn't have a PC to experience them at that time. Instead, I had a phone and
+                played a similar game—a Japanese MMORPG that I stayed with for a long time, from 2018 to 2023. That game
+                is Toram Online by Asobimo.</p>
+
+              <div class="image-gallery single-image">
+                <img src="/images/toramonline_logo.jpg" alt="Toram Online" class="responsive-img large-img">
+              </div>
+
+              <p>It is a truly unique game with very diverse builds, from jobs and skills to weapons and even a
+                meticulously built world story. While playing, I tried to figure out the formulas for damage from
+                different elements, drop rates, crafting rates, and other formulas. Besides this game, I have also
+                played other genres like League of Legends, TFT, Honkai: Star Rail, Genshin Impact, Zenless Zone
+                Zero,... but I mentioned Toram because it’s the one I played the longest and it fits the genre you are
+                looking for.</p>
+
+              <p>Because of that passion, I built a game myself. Although it is not an RPG and I used a different
+                language (C#) and engine (Unity), I think it can meet the requirements for diverse skills and attack
+                combos for both players and bosses. I have included it in the later part of this portfolio, so if you
+                are curious or interested, please click on the Project section to take a look and evaluate it.</p>
+
+              <p class="highlight-box">Thank you for spending time reviewing this portfolio. I look forward to an
+                invitation from you so we can discuss more about the diversity of RPGs.</p>
+            </div>
+          </section>
+
+          <section id="skill" class="content-section">
+            <h2>Skill</h2>
+            <div class="skill-category">
+              <h3>Technical Skill</h3>
+              <div class="skill-grid">
+                <div class="skill-card">
+                  <h4>Programming Language</h4>
+                  <p>C/C++/C#, Python, Java, HTML, CSS, JavaScript, TypeScript</p>
+                </div>
+                <div class="skill-card">
+                  <h4>Concepts</h4>
+                  <p>OOP, DSA, Solid Principles, Design Patterns</p>
+                </div>
+                <div class="skill-card">
+                  <h4>Tools</h4>
+                  <p>Git, VS Code, Unity, Blender, SQL, Figma</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Soft Skill</h3>
+              <div class="skill-grid">
+                <div class="skill-card">
+                  <h4>Core Skills</h4>
+                  <p>Teamwork, Communication, Problem Solving</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category">
+              <h3>Certifications</h3>
+              <div class="skill-grid">
+                <div class="skill-card certification">
+                  <h4>Basic Office Computing Certificates</h4>
+                  <p>Issued by VNU - HCM</p>
+                </div>
+                <div class="skill-card certification">
+                  <h4>English Proficiency</h4>
+                  <p>VSTEP Level 4 (CEFR B2)</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="project-1" class="content-section">
+            <h2>Heaven In Your Heart</h2>
+            <div class="content-block">
+              <h3>About Project</h3>
+              <p>I initially planned to develop this project as an MMORPG. However, realizing the heavy workload and my
+                limited resources as an individual, I decided to focus on optimizing the most important core: the Combat
+                System. Instead of building a vast but shallow world, I chose to extract the Hack & Slash aspect to
+                focus on handling control mechanics, hit feeling (impact), and visual effects, aiming to create a
+                gameplay experience that is as smooth and complete as possible within my current capabilities.</p>
+            </div>
+
+            <div class="content-block">
+              <h3>World Design Description</h3>
+              <p>Direction: Developing the world using a Linear Maps structure.</p>
+              <p>Design Mindset: Instead of building an Open World that exceeds the optimization capabilities of a
+                single person, I focus on creating zones with clear paths. This approach helps me better control the
+                player experience, ensuring that each scene is carefully crafted in terms of environment and lighting.
+              </p>
+              <p>Map Structure: The areas are divided into smaller interconnected segments (similar to the structure of
+                Toram Online). This not only reduces system resource usage but also allows me to design smooth
+                transition points, from forest trails to dark and majestic caves.</p>
+              <p>Environmental Contrast: I emphasize changing the atmosphere between areas to give players a sense of
+                progression. By shifting from the warm yellow light of mountain forests to the cold, misty blue tones of
+                sealed lands, I aim to spark curiosity and encourage players to explore what lies ahead.</p>
+
+              <div class="video-container">
+                <video width="100%" height="auto" autoplay loop muted playsinline>
+                  <source src="/videos/world.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+
+            <div class="content-block">
+              <h3>Combat System Description</h3>
+              <br>
+              <h3>Attacks & Visual Effects (VFX)</h3>
+              <p>Instead of spreading features too thin, I focused on perfecting the character's core skill set to
+                provide the best possible visual experience:</p>
+              <p>Melee Combat Focus: The main gameplay revolves around high-speed melee attack sequences.</p>
+              <p>Impactful AOE: Integrated Area of Effect (AOE) skills with distinct visuals (magic circles, feather
+                effects) for finishing moves or escaping when surrounded, creating visual highlights during combat.</p>
+              <p>Visual Feedback: I use particle systems and screen shake to simulate the power of skills, helping
+                players clearly feel the impact whenever a major attack is unleashed.</p>
+
+              <h3>Advanced Boss Mechanics</h3>
+              <p>This is the part I put the most effort into, aiming to create a real challenge for players:</p>
+              <p>Complex Skill Sets: Bosses are programmed with various attack types—from quick dashes and AOE attacks
+                to long-range projectiles—forcing players to constantly switch between offensive and defensive tactics.
+              </p>
+              <p>Phase Transition: Bosses have the ability to transition between different states (Phases). This not
+                only increases the difficulty but also changes the combat rhythm, requiring players to quickly adapt to
+                new attack patterns.</p>
+              <p>Pattern Recognition: The design emphasizes observation; every boss skill has specific telegraphing
+                signs so players can actively dash/dodge and find openings to counter-attack.</p>
+
+              <div class="video-container">
+                <video width="100%" height="auto" autoplay loop muted playsinline>
+                  <source src="/videos/combat.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+    </div>
+  </div>
+  <script type="module" src="/src/index.ts"></script>
+</body>
+
+</html>
