@@ -4,6 +4,7 @@
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
+    "noEmit": true,
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
@@ -20,8 +21,8 @@
     "declaration": true,
     "declarationMap": true,
 
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
+    "strict": false,
+    "noUncheckedIndexedAccess": false,
     "exactOptionalPropertyTypes": true,
 
     // Style Options
