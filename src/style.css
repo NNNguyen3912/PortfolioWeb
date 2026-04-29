@@ -325,3 +325,83 @@ article p {
   background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(229,192,123,0.05) 100%);
   border: 1px solid rgba(229,192,123,0.2);
 }
+
+/* Video Carousel */
+.video-carousel {
+  margin-top: 24px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.carousel-track {
+  flex: 1;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #000;
+  aspect-ratio: 16 / 9;
+}
+
+.carousel-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.carousel-video.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.carousel-btn {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text-primary);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background: var(--accent-color);
+  color: #1a1a1c;
+  border-color: var(--accent-color);
+  transform: scale(1.1);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: var(--accent-color);
+  transform: scale(1.3);
+}
